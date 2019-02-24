@@ -1,36 +1,26 @@
-# Esri reveal.js
+# [DevSummit 2019](https://www.esri.com/en-us/about/events/devsummit/overview)
 
-> Esri branded reveal.js slidedeck templates
+##  [Tom Wayson](https://devsummit2019.schedule.esri.com/speakers/2045697075)
 
-A jumpstart for folks that want to give a presentation using [reveal.js](https://github.com/hakimel/reveal.js/) using a slidedeck template that matches the ones for PowerPoint.
+---
 
-![Project preview](img/project-preview.gif)
+### Building Ambitious Web Applications Integrated with ArcGIS Online / Portal
 
-Live demos:
+<small>March 4, 2019 8:30 a.m.–5:00 p.m. Tapestry, Hilton Palm Springs</small>
 
-* [2019 DevSummit template](https://esri.github.io/reveal.js/devsummit-2019.html)
-* [2018 FedUC / DC DevSummit](https://esri.github.io/reveal.js/feduc-2018.html)
+- [Addons](ambitious-arcgis-apps-3-addons.html)
+- Maps
+- React
 
-For archived older versions, please see [releases](https://github.com/esri/reveal.js/releases).
+---
 
-## Documentation
+<ul>
+  <li>Using Webpack and React with the ArcGIS API for JavaScript</li>
+  <li>Charts and Custom Visualizations Beyond the Map</li>
+  <li>ArcGIS REST JS: Universal, Isomorphic Tasty JavaScript for Much Win</li>
+  <li>Hub for Developers</li>
+</ul>		
 
-See: [reveal.js documentation](https://github.com/hakimel/reveal.js/blob/master/README.md)
+---
 
-## License
-
-Copyright (c) 2018 Esri
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-> http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-A copy of the license is available in the repository's [LICENSE](./LICENSE) file.
+[About](https://github.com/tomwayson/devsummit-2019/blob/master/about.md)
