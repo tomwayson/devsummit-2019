@@ -4,7 +4,7 @@
 <h2 style="text-align: left; font-size: 1.5em">Addons</h2>
 <p style="text-align: left; font-size: 30px;">Tom Wayson</p>
 <p style="text-align: left; font-size: 30px;"><a href="https://github.com/tomwayson/">@tomwayson</a></p>
-    <p style="text-align: left; font-size: 30px;">slides: <a href="https://bit.ly/2VnxKbV"><code>https://bit.ly/2VnxKbV</code></a></p>
+    <p style="text-align: left; font-size: 30px;">slides: <a href="https://bit.ly/2H3143h"><code>https://bit.ly/2H3143h</code></a></p>
 
 ---
 
@@ -12,7 +12,7 @@
 
   <h3>Follow Along</h3>
   <p>
-    <a href="https://bit.ly/2VnxKbV" target="_blank">https://bit.ly/2VnxKbV</a>
+    <a href="https://bit.ly/2H3143h" target="_blank">https://bit.ly/2H3143h</a>
   </p>
   <p>
     <a href="https://github.com/tomwayson/devsummit-2019/" target="_blank">@tomwayson/devsummit-2019</a>
@@ -226,4 +226,4 @@ what this means for you:
 ---
 
 <!-- .slide: data-background="img/wayson/Backlit_keyboard.jpg" -->
-  <h4>Let's <a href="https://github.com/mjuniper/ambitious-arcgis-app-2018/blob/master/workshop/3-addons.md" target="_blank">add some addons!</a></h4>
+  <h4>Let's <a href="https://github.com/mjuniper/ambitious-arcgis-app-2019/blob/master/workshop/3-addons.md" target="_blank">add some addons!</a></h4>

@@ -4,12 +4,12 @@
 
 ---
 
-### Building Ambitious Web Applications Integrated with ArcGIS Online / Portal
+### [Building Ambitious Web Applications Integrated with ArcGIS Online / Portal](https://www.esri.com/en-us/about/events/devsummit/agenda/pre-summit-hands-on-training)
 
 <small>March 4, 2019 8:30 a.m.–5:00 p.m. Tapestry, Hilton Palm Springs</small>
 
 - [Addons](ambitious-arcgis-apps-3-addons.html)
-- Maps
+- [Maps](ambitious-arcgis-apps-5-maps.html)
 - React
 
 ---
