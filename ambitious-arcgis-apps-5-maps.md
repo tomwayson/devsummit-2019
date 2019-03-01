@@ -102,8 +102,8 @@ https://www.flickr.com/photos/124076687@N04/15104547929
 <!-- .slide: data-background="img/2019/devsummit/bg-4.png" data-transition="fade" -->
 <h3>Are you:
 <ol>
-  <li class="fragment">Using [webpack](https://webpack.js.org/)?</li>
   <li class="fragment">Using ArcGIS API >= 4.7?</li>
+  <li class="fragment">Using [webpack](https://webpack.js.org/)?</li>
   <li class="fragment">Able to configure webpack?</li>
 </ol>
 
@@ -122,10 +122,11 @@ https://www.flickr.com/photos/124076687@N04/15104547929
 
 ---
 
-<!-- .slide: data-background="img/2019/devsummit/bg-3.png" data-transition="fade" class="code-lg" -->
+<!-- .slide: data-background="img/2019/devsummit/bg-3.png" data-transition="fade" class="code-md" -->
 <h3>Using [@arcgis/webpack-plugin](https://github.com/Esri/arcgis-webpack-plugin)</h3>
+<p class="fragment">Let's you use ArcGIS API like any other library 🎉</p>
 
-```js
+<pre class="fragment"><code>
 import Map from 'esri/Map'
 import MapView from 'esri/views/MapView';
 
@@ -134,13 +135,47 @@ var view = new MapView({
   container: "viewDiv",
   map: map
 });
-```
-<p>Let's you use ArcGIS API like any other library 🎉</p>
+</code></pre>
 
 ---
 
 <!-- .slide: data-background="img/2019/devsummit/bg-2.png" data-transition="fade" -->
 ### For everyone else, there's [esri-loader](https://github.com/Esri/esri-loader)
+
+<div>
+    <img src="img/wayson/esri-loader-band-aid-center-text.png" class="transparent" height="120" />
+</div>
+
+---
+
+<!-- .slide: data-background="img/2019/devsummit/bg-2.png" data-transition="fade" -->
+### Works with ArcGIS API 4.x _and [3.x](https://developers.arcgis.com/javascript/3/)_
+
+<div>
+  <img src="img/wayson/esri.png" class="transparent" height="120" />
+  <img src="img/wayson/esri.png" class="transparent" height="120" />
+  <img src="img/wayson/esri.png" class="transparent" height="120" />
+  <img src="img/wayson/esri.png" class="transparent fragment" height="120" />
+</div>
+
+---
+
+<!-- .slide: data-background="img/2019/devsummit/bg-2.png" data-transition="fade" -->
+### Works with _any_ module loader
+
+<div>
+  <img src="img/wayson/esri.png" class="transparent" height="120" />
+  <img src="img/wayson/Broken_Love_Heart_bandaged_2_nevit.svg" class="transparent" height="100" />
+  <img src="img/wayson/webpack-icon-square-big.png" class="transparent" height="120" />
+  <img src="img/wayson/rollup1.png" class="transparent" height="100" />
+  <img src="img/wayson/broccoli-logo.generated.png" class="transparent" height="120" />
+  <img src="img/wayson/parcel-og.png" class="transparent" height="140" />
+</div>
+
+---
+
+<!-- .slide: data-background="img/2019/devsummit/bg-2.png" data-transition="fade" -->
+### Works with _any_ framework <span class="fragment">& CLIs</span>
 
 <div>
   <img src="img/wayson/esri.png" class="transparent" height="120" />
@@ -149,12 +184,12 @@ var view = new MapView({
   <img src="img/wayson/angular.png" class="transparent" height="120" />
   <img src="img/wayson/vue-logo.png" class="transparent" height="120" />
   <img src="img/wayson/react-js-img.png" class="transparent" height="120" />
-  <img src="img/wayson/parcel-og.png" class="transparent" height="140" />
+  <img src="img/wayson/Dojo-New.png" class="transparent fragment" height="120" />
 </div>
 
 ---
 
-<!-- .slide: data-background="img/2019/devsummit/bg-3.png" class="code-lg" -->
+<!-- .slide: data-background="img/2019/devsummit/bg-3.png" class="code-md" -->
 ### Using <a href="https://github.com/Esri/esri-loader" target="_blank">esri-loader</a>:
 
 ```js
@@ -171,7 +206,7 @@ loadModules([
 ---
 
 <!-- .slide: data-background="img/wayson/shrug-2799746255_436723e65c_z.jpg" -->
-  <h4>Which is right for _our_ use case?</h4>
+  <h4>Which lib is right for _our_ use case?</h4>
 
 ---
 
@@ -198,6 +233,47 @@ Not really...<span class="fragment"> but let's pretend</span>
   <img src="img/wayson/Broken_Love_Heart_bandaged_2_nevit.svg" class="transparent" height="200" />
   <img src="img/wayson/tomster-sm.png" class="transparent" height="200" />
 </div>
+
+---
+
+<!-- .slide: data-background="img/wayson/pencil.jpeg" data-transition="fade" -->
+  <h4 class="pencil">ArcGIS API: Pro Tips</h4>
+
+---
+
+<!-- .slide: data-background="img/wayson/backpacker-map.jpeg" -->
+  <p class="fragment"><del style="color:red">&lt;Component /&gt;</del></p>
+  <h4>1. Centralize use of the ArcGIS API</h4>
+
+---
+
+<!-- .slide: data-background="img/wayson/lazy-dog.jpeg" -->
+  <h4>2. Lazy-load the ArcGIS API</h4>
+
+---
+
+<!-- .slide: data-background="img/wayson/ambitious-screenshot-no-map.png" data-background-position="center top" -->
+
+---
+
+<!-- .slide: data-background="img/2019/devsummit/bg-3.png" -->
+### 3. Use POJOs & [autocasting](https://developers.arcgis.com/javascript/latest/guide/autocasting/index.html)
+<pre class="fragment"><code>
+  var diamondSymbol = {
+    type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
+    style: "diamond",
+    color: [ 255, 128, 45 ],  // autocasts as new Color()
+    outline: {              // autocasts as new SimpleLineSymbol()
+      style: "dash-dot",
+      color: [ 255, 128, 45 ] // Again, no need for specifying new Color()
+    }
+  };
+</code></pre>
+
+---
+
+<!-- .slide: data-background="img/wayson/sunglasses-woman-girl-faceless.jpg" -->
+#### 4. [`useIdentiy: false`](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html)
 
 ---
 

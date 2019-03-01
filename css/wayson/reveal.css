@@ -81,11 +81,16 @@ img.esriLogo {
 }
 
 
-.code-lg code {
+.code-lg code, .code-md code {
   margin: 0 auto;
 }
 
 .code-lg pre {
   width: 60%;
   font-size: 1em;
+}
+
+.code-md pre {
+  width: 70%;
+  font-size: .8em;
 }
