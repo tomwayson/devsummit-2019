@@ -30,8 +30,13 @@
 
 ---
 
+<!-- .slide: data-background="img/wayson/car-carrier.jpg" -->
+  <h4>Bloat your app with dependencies?</h4>
+
+---
+
 <!-- .slide: data-background="img/wayson/rusted-1246518_1920.jpg" -->
-  <h4>More trouble than it's worth?</h4>
+  <h4>Maintenance nightmare?</h4>
 
 ---
 
@@ -91,38 +96,7 @@ Note:
 ---
 
 <!-- .slide: data-background="img/wayson/7658225516_b327a08733_k.jpg" -->
-  <h4>Time to install and configure</h4>
-
----
-
-<!-- .slide: data-background="img/2019/devsummit/bg-4.png" data-transition="fade" -->
-<img class="transparent" src="img/wayson/800px-Npm-logo.svg.png" style="width: 300px; margin: 110px 0;">
-<h3><code>npm install some-bootstrap-lib</code></h3>
-
-Note:
-- easier than ever
-
----
-
-<!-- .slide: data-background="img/2019/devsummit/bg-4.png" data-transition="fade" -->
-<img class="transparent" src="img/wayson/yarn-cat-eating-bower-bird.png">
-<h3><code>yarn add some-bootstrap-lib</code></h3>
-
----
-
-<!-- .slide: data-background="img/2019/devsummit/bg-4.png" data-transition="fade" class="code-lg" -->
-
-```js
-  // some-bootstrap-lib's package.json
-  "main": "dist/node/index.js",
-  "browser": "dist/umd/index.js",
-  "module": "dist/esm/index.js",
-  "js:next": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
-```
-
-Note:
-- well written libs will tell build tools where to find JS files
+  <h4>Decisions, decisions</h4>
 
 ---
 
@@ -139,8 +113,18 @@ on your own for other assets like styles, images
 
 ---
 
-<!-- .slide: data-background="img/2019/devsummit/bg-4.png" -->
-## What if this were easier?
+<!-- .slide: data-background="img/2019/devsummit/bg-4.png" data-transition="fade" -->
+<img class="transparent" src="img/wayson/800px-Npm-logo.svg.png" style="width: 300px; margin: 110px 0;">
+<h3><code>npm install some-bootstrap-lib</code></h3>
+
+Note:
+- easier than ever
+
+---
+
+<!-- .slide: data-background="img/2019/devsummit/bg-4.png" data-transition="fade" -->
+<img class="transparent" src="img/wayson/yarn-cat-eating-bower-bird.png">
+<h3><code>yarn add some-bootstrap-lib</code></h3>
 
 ---
 
@@ -175,8 +159,6 @@ Note:
 
 Note:
 - Ember goal: easy to author high qaulity addons
-- Won't go into details,
-- 2 things you should know
 
 ---
 
@@ -203,13 +185,17 @@ by default:
 <!-- .slide: data-background="img/wayson/17517769750_2757bafdf9_k.jpg"  data-transition="fade" -->
 
 Note:
-what this means for you:
-- generally Ember addons are good quality
+- this means generally Ember addons are good quality
+
+---
+
+<!-- .slide: data-background="img/wayson/rusted-1246518_1920.jpg" -->
+  <h4>Can be out of date</h4>
 
 ---
 
 <!-- .slide: data-background-color="#faf4f1" class="ember-brand" -->
-  <h3>Add bootstrap to an Ember app</h3>
+  <h3>Goal 1: Add bootstrap to our Ember app</h3>
     <img src="img/wayson/tomster-sm.png" class="transparent" height="300" />
     <img src="img/wayson/bootstrap4-solid.svg" class="transparent" height="300" />
   <p>Start at <a href="https://www.emberaddons.com/?query=bootstrap" target="_blank">emberaddons.com</a></p>
@@ -217,11 +203,12 @@ what this means for you:
 ---
 
 <!-- .slide: data-background-color="#faf4f1" class="ember-brand" -->
-  <h3>Over a dozen <a href="https://www.emberaddons.com/?query=arcgis" target="_blank">ArcGIS addons</a></h3>
+  <h3>Goal 2: Search for ArcGIS items</h3>
   <a href="https://www.emberaddons.com/?query=arcgis" target="_blank">
     <img src="img/wayson/tomster-sm.png" class="transparent" height="300" />
     <img src="img/wayson/esri.png" class="transparent" height="300" />
   </a>
+  <p>Over a dozen <a href="https://www.emberaddons.com/?query=arcgis" target="_blank">ArcGIS addons</a></p>
 
 ---
 
