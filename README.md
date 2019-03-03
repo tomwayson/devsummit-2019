@@ -10,7 +10,7 @@
 
 - [Addons](ambitious-arcgis-apps-3-addons.html)
 - [Maps](ambitious-arcgis-apps-5-maps.html)
-- React
+- React [PDF](https://tomwayson.github.io/ambitious-react-apps/ambitious-react-apps.pdf) [source](https://github.com/tomwayson/ambitious-react-apps/)
 
 ---
 
